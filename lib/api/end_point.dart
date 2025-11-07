@@ -1,6 +1,7 @@
 class EndPoint{
 
-  static String apiName='/v2/top-headlines/sources';
+  static String apiSource='/v2/top-headlines/sources';
+  static String apiEveryThing='/v2/everything';
 
 
 }

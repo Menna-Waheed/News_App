@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_git_hub/core/app_route.dart';
+import 'package:news_git_hub/core/app_theme.dart';
 import 'package:news_git_hub/home/category_details/category_details.dart';
 import 'package:news_git_hub/home/home_screen.dart';
 
@@ -29,7 +30,9 @@ class MyApp extends StatelessWidget {
         AppRoute.homeScreen:(context)=>HomeScreen(),
         AppRoute.categoryDetails:(context)=>CategoryDetails()
       },
-
+     darkTheme:AppTheme.darkTheme ,
+      themeMode: ThemeMode.light,
+      theme: AppTheme.lightTheme,
 
 
     );

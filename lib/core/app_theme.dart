@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:news_git_hub/core/app_color.dart';
 import 'package:news_git_hub/core/app_style.dart';
 
 
-import 'app_color.dart';
+
 
 class AppTheme {
   static final ThemeData lightTheme = ThemeData(
