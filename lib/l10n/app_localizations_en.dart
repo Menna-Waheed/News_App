@@ -10,4 +10,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get language => 'Language';
+
+  @override
+  String get some_thing_went_wrong => 'SomeThing Went Wrong';
+
+  @override
+  String get try_again => 'Try Again';
 }
