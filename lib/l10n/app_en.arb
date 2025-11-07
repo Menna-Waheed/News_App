@@ -1,7 +1,8 @@
 {
 
-"language":"Language"
-
+"language":"Language",
+"some_thing_went_wrong":"SomeThing Went Wrong",
+"try_again":"Try Again"
 
 
 }

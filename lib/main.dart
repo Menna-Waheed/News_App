@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:news_git_hub/core/app_route.dart';
+import 'package:news_git_hub/home/category_details/category_details.dart';
+import 'package:news_git_hub/home/home_screen.dart';
+
+import 'l10n/app_localizations.dart';
 
 void main(){
 
@@ -15,8 +20,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       debugShowCheckedModeBanner: false,
-
+       initialRoute: AppRoute.homeScreen,
+      locale: Locale('en'),
+      routes: {
+        AppRoute.homeScreen:(context)=>HomeScreen(),
+        AppRoute.categoryDetails:(context)=>CategoryDetails()
+      },
 
 
 

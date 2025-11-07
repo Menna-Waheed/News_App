@@ -10,4 +10,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get language => 'اللغه';
+
+  @override
+  String get some_thing_went_wrong => 'هناك خطأ';
+
+  @override
+  String get try_again => 'حاول مره اخرى';
 }
