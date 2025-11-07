@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news_git_hub/api/api_managment.dart';
 import 'package:news_git_hub/core/app_color.dart';
 import 'package:news_git_hub/core/app_style.dart';
+import 'package:news_git_hub/home/category_details/source_tab_widget.dart';
 import 'package:news_git_hub/l10n/app_localizations.dart';
 import 'package:news_git_hub/model/SourceResponse.dart';
 
@@ -75,12 +76,7 @@ class _CategoryDetailsState extends State<CategoryDetails> {
 
         }
         var sourceList=snapshot.data?.sources??[];
-        return ListView.builder(
-            itemBuilder: (context, index) {
-                  return Text(sourceList[index].name??'',style: AppStyle.mediam20black,);
-            },
-        itemCount:sourceList.length ,
-        );
+        return SourceTabWidget(sourceList: sourceList);
       },
     );
   }

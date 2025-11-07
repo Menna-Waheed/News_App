@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home',style: Theme.of(context).textTheme.headlineLarge,),
+        title: Text('Home',style: Theme.of(context).textTheme.labelLarge,),
         centerTitle: true,
       ),
       body: CategoryDetails(),

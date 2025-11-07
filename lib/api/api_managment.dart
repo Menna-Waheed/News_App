@@ -11,9 +11,10 @@ class ApiManagment{
 static Future<SourceResponse> getSource()async{
   Uri url=Uri.https(
       Constant.baseUrl,
-      EndPoint.apiName,
+      EndPoint.apiSource,
       {
         "apiKey":Constant.apiKey,
+        // "language":"ar",
 
       });
   try{
